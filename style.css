@@ -1,0 +1,66 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background setup to center everything */
+body {
+    background-color: #121212; /* Dark background */
+    display: flex;
+    justify-content: center; /* Horizontal center */
+    align-items: center;     /* Vertical center */
+    min-height: 100vh;       /* Full screen height */
+    color: #ffffff;
+}
+
+/* The Dashboard Card */
+.card {
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 800px; /* Limits width on big screens */
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    color: #2ecc71; /* Electricity Green */
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* Styled Button */
+#loadBtn {
+    background-color: #2ecc71;
+    color: #121212;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+#loadBtn:hover {
+    background-color: #27ae60;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(46, 204, 113, 0.3);
+}
+
+#loadBtn:active {
+    transform: translateY(0);
+}
+
+/* Chart Container */
+canvas {
+    width: 100% !important;
+    height: auto !important;
+    margin-top: 10px;
+}
